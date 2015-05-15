@@ -5,7 +5,7 @@
 
 - name: link ansible hosts file
   file:
-    src: /vagrant/servers.ini
+    src: /vagrant/inventory.ini
     dest: /etc/ansible/hosts
     state: link
 
