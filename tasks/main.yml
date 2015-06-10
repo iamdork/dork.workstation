@@ -1,12 +1,12 @@
 - name: remove hosts file
   file:
-    path: /etc/ansible/hosts.d/custom.ini
+    path: /etc/ansible/hosts.d/custom
     state: absent
 
 - name: link ansible hosts file
   file:
     src: /vagrant/inventory.ini
-    dest: /etc/ansible/hosts.d/custom.ini
+    dest: /etc/ansible/hosts.d/custom
     state: link
 
 - name: copy ssh config
