@@ -10,7 +10,8 @@
     state: link
 
 - name: copy ssh config
-  copy:
+  file:
     src: /vagrant/ssh-config
     dest: /home/vagrant/.ssh/config.d/local.conf
+    state: link
 
