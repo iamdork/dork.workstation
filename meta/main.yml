@@ -1,5 +1,5 @@
 dependencies:
-- dork.host
+- dork.remote
 - { role: dork.admin, admin_name: vagrant }
 - { role: dork.shell, shell_user: vagrant, shell_zsh_theme: Soliah }
 - { role: dork.shell, shell_user: root, shell_zsh_theme: mrtazz }
