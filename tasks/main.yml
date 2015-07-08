@@ -14,11 +14,3 @@
     src: /vagrant/ssh-config
     dest: /home/vagrant/.ssh/config.d/local.conf
     state: link
-
-- name: check if dork development folder is mounted
-  stat:
-    path: /var/dork/dork
-  register: dorkdev
-  changed_when: dorkdev.stat.isdir is defined and dorkdev.stat.isdir
-  notify: replace dork sources
-
